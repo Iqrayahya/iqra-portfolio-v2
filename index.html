@@ -123,7 +123,19 @@ h1,h2,h3{font-family:var(--f-head);font-weight:600;letter-spacing:-.025em;margin
 .svc.open p{color:#fde6ea;max-width:none}
 .svc.open .inc{display:block}
 .svc.open .round{background:var(--ink);transform:rotate(45deg);align-self:center}
+.svc.wide{grid-column:1/-1;flex-direction:row;align-items:center;text-align:left;gap:36px;min-height:0;padding:30px 34px;background:var(--ink);color:#fff}
+.svc.wide .ico{flex:none;margin:0}
+.svc.wide .wtxt{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.svc.wide .wtop{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.svc.wide h3{font-size:24px}
+.svc.wide .new{font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:var(--crimson);color:#fff}
+.svc.wide p{color:#cfc4c6;max-width:60ch;font-size:15px}
+.svc.wide .inc{display:block}
+.svc.wide .chips span{border-color:#4a4244}
+.svc.wide .chips span::before{background:var(--crimson)}
+.svc.wide .btn{flex:none}
 @media (max-width:1000px){.svc-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.svc.wide{flex-direction:column;align-items:flex-start;gap:18px;padding:26px 22px}.svc.wide .ico{width:110px;height:94px}}
 @media (max-width:540px){.svc-grid{grid-template-columns:1fr}.svc{min-height:0}}
 
 /* ---------- work ---------- */
@@ -299,7 +311,7 @@ footer{padding-block:24px 32px}
       <div class="head">
         <span class="badge">AI creator &amp; automation builder</span>
         <h1>Create, Build, and Automate Your Brand <em>with AI</em></h1>
-        <p>I make AI videos and ads that get your brand seen, then build the agents and automations that handle the work behind them.</p>
+        <p>I make AI videos and ads, run them on Meta to get your brand seen, then build the agents and automations that handle the work behind them.</p>
         <div class="btn-row">
           <a class="btn btn-light" href="#work">See My Work</a>
           <a class="btn btn-dark" href="#services">Explore Services</a>
@@ -392,6 +404,25 @@ footer{padding-block:24px 32px}
           <p>Scroll-stopping video ads for real estate, e-commerce and local businesses.</p>
           <div class="inc"><b>Includes:</b><div class="chips"><span>Video ads</span><span>Ad copy</span><span>Hook testing</span><span>Variations</span></div></div>
           <button class="round" aria-expanded="false" aria-label="Show what AI Ads includes">↑</button>
+        </article>
+        <article class="svc wide">
+          <svg class="ico" viewBox="0 0 132 112" aria-hidden="true">
+            <defs><linearGradient id="gk" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6efef"/><stop offset="1" stop-color="#cfc4c6"/></linearGradient></defs>
+            <ellipse cx="66" cy="104" rx="44" ry="6" fill="#000" opacity=".35"/>
+            <rect x="16" y="14" width="100" height="82" rx="20" fill="url(#gk)"/>
+            <rect x="32" y="62" width="12" height="20" rx="4" fill="#6e6461"/>
+            <rect x="52" y="50" width="12" height="32" rx="4" fill="#6e6461"/>
+            <rect x="72" y="40" width="12" height="42" rx="4" fill="#cc163f"/>
+            <rect x="92" y="28" width="12" height="54" rx="4" fill="#cc163f"/>
+            <path d="M30 50l22-14 18 8 30-20" stroke="#141112" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M92 22l9 2-2 9" stroke="#141112" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="wtxt">
+            <div class="wtop"><h3>Meta Ads Management</h3><span class="new">Facebook &amp; Instagram</span></div>
+            <p>I make your ads and run them too. Your Facebook and Instagram campaigns get set up, targeted, tracked and improved every week, so your budget goes to what brings in leads and sales.</p>
+            <div class="inc"><div class="chips"><span>Campaign setup</span><span>Audience targeting</span><span>Pixel &amp; Conversions API</span><span>A/B creative testing</span><span>Budget optimization</span><span>Monthly reports</span></div></div>
+          </div>
+          <a class="btn btn-red" href="https://wa.me/923196218650?text=Hi%20Iqra%2C%20I%27d%20like%20help%20with%20Meta%20Ads." target="_blank" rel="noopener">Grow With Meta Ads</a>
         </article>
       </div>
     </div>
@@ -518,6 +549,7 @@ footer{padding-block:24px 32px}
           <details open><summary>How long does a project take?</summary><p>A single video usually takes a few days after the script is approved. Agents and automations depend on scope, and you get a timeline with the plan.</p></details>
           <details><summary>Do I need to be on camera?</summary><p>No. Most of my videos are fully animated or made with AI spokespeople. If you want to appear, I can edit your own footage too.</p></details>
           <details><summary>What does an AI agent do for my business?</summary><p>It handles repeat conversations: answering common questions, qualifying leads and booking appointments, often on WhatsApp. You stay in control and can step in at any time.</p></details>
+          <details><summary>Do you run the ads too, or just make them?</summary><p>Both. I can make the ad creative, then set up and manage your Facebook and Instagram campaigns: targeting, Pixel and Conversions API tracking, testing and budget. You keep ownership of your ad account, and you get a clear report every month.</p></details>
           <details><summary>Do you work with all industries?</summary><p>I've built for real estate, dental clinics, jewelry and e-commerce, SaaS, and founders. If your customers are online, AI video and automation can usually help.</p></details>
           <details><summary>How do we get started?</summary><p>Send the form below or message me on WhatsApp. We'll book a short call, and you'll get a plan to approve before any work begins.</p></details>
         </div>
@@ -545,6 +577,7 @@ footer{padding-block:24px 32px}
             <label><input type="radio" name="service" id="s-agent" value="AI agent">AI Agent</label>
             <label><input type="radio" name="service" id="s-auto" value="Automation">Automation</label>
             <label><input type="radio" name="service" id="s-ads" value="AI ads">AI Ads</label>
+            <label><input type="radio" name="service" id="s-meta" value="Meta Ads management">Meta Ads</label>
           </div>
         </fieldset>
         <div class="field"><label for="f-msg">Message</label><textarea id="f-msg" name="message" placeholder="Tell me about your business"></textarea></div>
@@ -622,7 +655,7 @@ footer{padding-block:24px 32px}
       </div>
       <div class="fcard dark">
         <div class="fcol"><h4>Main</h4><a href="#services">Services</a><a href="#work">Work</a><a href="#plans">Plans</a><a href="#process">Process</a><a href="#faq">FAQ</a></div>
-        <div class="fcol"><h4>Services</h4><a href="#services">AI Animation &amp; Video</a><a href="#services">AI Agents</a><a href="#services">Claude Code &amp; Automation</a><a href="#services">AI Ads</a></div>
+        <div class="fcol"><h4>Services</h4><a href="#services">AI Animation &amp; Video</a><a href="#services">AI Agents</a><a href="#services">Claude Code &amp; Automation</a><a href="#services">AI Ads</a><a href="#services">Meta Ads Management</a></div>
         <div class="fcol contact"><h4>Get in touch</h4><span>iqrayahya.tech@gmail.com</span><a href="https://wa.me/923196218650" target="_blank" rel="noopener">+92 319 621 8650</a><span>Working with clients worldwide</span></div>
       </div>
     </div>
